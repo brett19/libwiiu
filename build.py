@@ -86,9 +86,8 @@ def rootIndexGen(wwwDir):
 		#Write project index in root index file.
 		f.write("\t<a href=\""+os.path.basename(subdir)+"\\index.html\">"+os.path.basename(subdir).replace('_',' ').title()+" (")
 		#Add version numbers supported for project.
-		for versionNumber in versionsSupported[:-1]:
+		for versionNumber in versionsSupported:
 			f.write(versionNumber+",")
-		f.write(versionsSupported[-1])
 		f.write(")</a>\n")
 	#Write closing html tags.
 	f.write("\t</body>\n</html>")
