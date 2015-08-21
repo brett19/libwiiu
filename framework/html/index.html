@@ -79,6 +79,10 @@
 					document.getElementById("text").innerHTML="Detected Wii U Firmware version 2.0.0";
 					window.location = "payload200.html";
 				}
+				else
+				{
+					document.getElementById("text").innerHTML="Unsupported Wii U Browser: "+browserInfo;
+				}
 			}
 			-->If we couldn't parse the browser version, throw an error message
 			else
